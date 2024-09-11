@@ -1,0 +1,27 @@
+/* 
+    TRANSITIONS:
+*/
+/* 
+    ease - especifica um efeito de transição com inicio lento
+    linear - especifica um efeito de transição com a mesma velocidade
+    ease-in - especifica um efeito de transição com inicio lento
+    ease-out - especifica um efeito de transição com final lento
+    ease-in-out - especifica um efeito de transição com inicio e final lentos
+
+*/
+@font-face {
+    font-family: "open-sans";
+    src: url(Open_Sans/OpenSans-VariableFont_wdth\wght.ttf);
+  }
+  @font-face {
+    font-family: "jersey";
+    src: url(Jersey_15/Jersey15-Regular.ttf);
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "jersey", sans-serif;
+  }
+ 
