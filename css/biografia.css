@@ -7,15 +7,24 @@
   src: url(fonts/Playwrite_CU/PlaywriteCU-VariableFont_wght.ttf);
 }
 body {
-  background: linear-gradient(45deg, #8a9d9c, #6ba57b);
+  background: linear-gradient(45deg, #899CA2,transparent);
+  background-attachment: fixed;
 }
 .biografia {
+  position: absolute;
   width: 100%;
 }
 .imagem {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 544px;
+  
+  background-image: url(../images/socrates_biografia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 39%;
   & .titulo {
     font-size: 6em;
     font-family: "Hand";
@@ -24,22 +33,4 @@ body {
   }
 }
 
-.paragrafo {
-  font-family: "Hand";
-  font-size: 1.1em;
-  max-width: 900px;
-  text-align: justify;
-  margin: 15px auto;
-  color: white;
-}
-.especial {
-  margin-top: 80px;
-}
-.imagem {
-  width: 100%;
-  height: 544px;
-  background-image: url(../images/socrates_biografia.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 39%;
-}
+
