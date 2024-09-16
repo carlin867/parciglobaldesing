@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ccc;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.galeria {
+    margin-top:  50px;
+    margin-bottom:  50px;
+  width: 100%;
+  height: auto;
+
+
+  display: grid;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  & .foto {
+    & .img_foto {
+      background-color: aqua;
+      width: 230px;
+      height: 150px;
+      border-radius: 10px;
+      transition: all 0.2s ease;
+    }
+    & .img_foto:hover {
+      box-shadow: 0 0 10px black;
+      position: relative;
+      bottom: 6px;
+    }
+  }
+}
+@media screen and (max-width: 987px) {
+    .galeria {
+        margin:  50px auto;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      display: grid;
+      gap: 5px;
+      align-items: center;
+      justify-content: center;
+    
+      grid-template-columns: auto auto auto ;
+      grid-template-rows: auto auto auto ;
+      & .foto {
+        & .img_foto {
+          background-color: aqua;
+          width: 230px;
+          height: 150px;
+          border-radius: 10px;
+          transition: all 0.2s ease;
+        }
+        & .img_foto:hover {
+          box-shadow: 0 0 10px black;
+          position: relative;
+          bottom: 6px;
+        }
+      }
+    }
+  }
+@media screen and (max-width: 719px) {
+    .galeria {
+        margin:  50px auto;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      display: grid;
+      gap: 5px;
+      align-items: center;
+      justify-content: center;
+    
+      grid-template-columns: auto auto  ;
+      grid-template-rows: auto auto auto ;
+      & .foto {
+        & .img_foto {
+          background-color: aqua;
+          width: 230px;
+          height: 150px;
+          border-radius: 10px;
+          transition: all 0.2s ease;
+        }
+        & .img_foto:hover {
+          box-shadow: 0 0 10px black;
+          position: relative;
+          bottom: 6px;
+        }
+      }
+    }
+  }
