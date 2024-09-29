@@ -15,7 +15,7 @@ if (inputBox && icon) {
     } else {
       let searchTerm = inputBox.value.trim().toLowerCase();
       searchTerm = removerAcentos(searchTerm); // Remove os acentos antes de gerar a URL
-      const url = `${searchTerm}.html`;
+      const url = `../${searchTerm}.html`;
       console.log(`Redirecionando para: ${url}`);
       window.location.href = url;
     }
@@ -30,9 +30,7 @@ searchWrapper.addEventListener('click', (event) => {
     'Platão',
     'Aristóteles',
     'Parménides',
-    'Diógenes',
-    'Benicio e Werik são LGBTS!',
-    'Deivison é igual o sol!'
+    'Diógenes'
   ];
 
   searchWrapper.classList.add('active');
@@ -61,3 +59,4 @@ document.addEventListener('click', (e) => {
     searchWrapper.classList.remove('active');
   }
 });
+

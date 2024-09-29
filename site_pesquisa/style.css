@@ -7,7 +7,9 @@
 }
 
 body{
-  background: #519;
+  background: url(escola.jpg);
+  background-position: center center;
+  background-attachment: fixed;
   padding: 0 20px;
 }
 
@@ -28,7 +30,7 @@ body{
 }
 
 .container h2{
-  color: #519;
+  color: #51AFFA;
 }
 
 .container .search{
