@@ -26,14 +26,14 @@ body {
   grid-template-rows: auto auto auto auto;
   & .foto {
     & .img_foto {
-      background-color: aqua;
+      background-color: black;
       width: 230px;
       height: 150px;
       border-radius: 10px;
       transition: all 0.2s ease;
     }
     & .img_foto:hover {
-      box-shadow: 0 0 10px black;
+      box-shadow: 0 0 100px white;
       position: relative;
       bottom: 6px;
     }
