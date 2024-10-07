@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: 'Hand';
-  src: url(../css/fonts/Playwrite_CU/PlaywriteCU-VariableFont_wght.ttf);
+  src: url(fonts/Playwrite_CU/PlaywriteCU-VariableFont_wght.ttf);
 }
 .formulario{
   width: 100%;
@@ -74,11 +74,12 @@
 
 .cadastro input {
   margin: 5px 0;
-  padding: 5px;
+  padding: 2px;
   border-radius: 10px;
   width: 100%;
   max-width: 250px;
   border: 1px solid #ccc;
+  font-family: 'Hand';
 }
 ::placeholder{
   text-align: center;
@@ -97,11 +98,12 @@
 
 .login input {
   margin: 5px 0;
-  padding: 5px;
+  padding: 2px;
   border-radius: 10px;
   width: 100%;
   max-width: 250px;
   border: 1px solid #ccc;
+  font-family: 'Hand';
 }
 ::placeholder{
   text-align: center;
@@ -148,12 +150,37 @@
   z-index: 3;
   font-family: 'Hand';
   cursor: pointer;
+}
+.btn_forms{
+  background: none;
+  border: 2px solid transparent;
+  color: white;
+  font-family: 'Hand';
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: all 0.4s ease;
+  border-radius: 3px;
+}
+.btn_forms:hover{
+  background-color: #020299;
+  border: 2px solid white;
+}
+.btn_forms:active{
+  background-color: #4848db;
+}
 
+.mostrarSenha{
+  position: absolute;
+  width: 24px;
+  cursor: pointer;
 }
-.cadastro_button{
-  
-  
+.msC{
+  top: 162px;
+  left: 287px;
 }
-.login_button{
+.msL{
+  top: 134px;
+  left: 287px;
+}
 
-}
