@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,15 +8,15 @@
     <link rel="stylesheet" href="cadastro-login.css">
 </head>
 <body>
-    <div  class="formulario">
+    <form class="formulario" action="cadastrar.php" method="POST">
 
         <div class="forms">
 
             <div class="buttonTransition">
                 <div class="btngroup">
-                    <div class="buttonColor"></div>
-                    <button class="cadastro_button">Cadastro</button>
-                    <button class="login_button">Login</button>
+                    
+                    <a class="cadastro_button" href="login.php">Cadastro</a>
+            
                 </div>
             </div>
 
@@ -36,36 +37,22 @@
                         
                     </label>
                     <img src="eye.svg" alt="" class="mostrarSenha msC">
-                    <button type="submit" class="btn_forms btn_cadastro">
+                    <button type="submit" class="btn_forms btn_cadastro" name="cadastrar">
                         Cadastrar
                     </button>
                 </div>
 
-                <div class="login">
-                    <label for="iusuario">
-                        
-                        <input type="text" name="usuario" id="iusuariol" placeholder="Usuário">
-                    </label>
-                    <label for="isenha">
-                        
-                        <input type="password" name="senha" id="isenhal" placeholder="Senha">
-                        
-                    </label>
-                    <img src="eye.svg" alt="" class="mostrarSenha msL">
-                    <button type="submit" class="btn_forms btn_login">
-                        Entrar
-                    </button>
-                </div>
+                
                 
             </div>
 
         </div>
 
-    </div>
+    </form>
 
 
 
 
-    <script src="cadastro-login.js"></script>
+  
 </body>
 </html>
