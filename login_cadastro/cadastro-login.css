@@ -11,23 +11,23 @@
 .formulario{
   width: 100%;
   height: 100vh;
-  background-color: #ccc;
+  
   color: white;
   
 
   & .forms{
+    width: 380px;
+    height: 420px;
     display: flex;
     flex-direction: column;
-    position: absolute;
     border-radius: 10px;
+    backdrop-filter: blur(16px);
+    border: 2px solid white;
+
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(45deg, #0000CD, #4169E1);
-    width: 380px;
-    height: 420px;
-    position: relative;
-    overflow: hidden;
     transition: all 0.5s ease;
 
     & .campo_resposta{
@@ -35,7 +35,7 @@
       
 
       & .cadastro, .login{
-        position: absolute;
+        position: relative;
         padding: 50px;
         width: 380px;
         height: 300px;
@@ -53,7 +53,7 @@
   }
 }
 .forms:hover{
-  box-shadow: 0 0 300px #4169E1;
+  backdrop-filter: blur(5px);
 }
 .cadastro {
   display: flex;
@@ -73,11 +73,13 @@
   border-radius: 10px;
   width: 100%;
   max-width: 250px;
-  border: 1px solid #ccc;
+  border: 3px solid #ffffff;
   font-family: 'Hand';
+  background: transparent;
 }
 ::placeholder{
   text-align: center;
+  color: white;
 }
 .login {
   display: flex;
@@ -97,12 +99,11 @@
   border-radius: 10px;
   width: 100%;
   max-width: 250px;
-  border: 1px solid #ccc;
+  border: 3px solid #ffffff;
   font-family: 'Hand';
+  background: transparent;
 }
-::placeholder{
-  text-align: center;
-}
+
 
 
 .buttonTransition{
@@ -145,6 +146,11 @@
   z-index: 3;
   font-family: 'Hand';
   cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.cadastro_button:hover, .login_button:hover{
+  border-bottom: 2px solid white;
 }
 .btn_forms{
   background: none;
@@ -158,12 +164,9 @@
   border-radius: 3px;
 }
 .btn_forms:hover{
-  background-color: #020299;
-  border: 2px solid white;
+  border: 3px solid white;
 }
-.btn_forms:active{
-  background-color: #4848db;
-}
+
 
 .mostrarSenha{
   position: absolute;
@@ -171,11 +174,21 @@
   cursor: pointer;
 }
 .msC{
-  top: 162px;
-  left: 287px;
+  top: 164.7px;
+  left: 284px;
 }
 .msL{
-  top: 134px;
-  left: 287px;
+  top: 135.5px;
+  left: 284px;
 }
-
+.fundologin{
+  background-image: url(../images/login.jpg);
+  
+}
+.fundocadastro{
+  background-image: url(../images/cadastro.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}

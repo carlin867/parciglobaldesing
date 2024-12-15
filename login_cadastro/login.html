@@ -7,15 +7,15 @@
     <title>Login/Cadastro</title>
     <link rel="stylesheet" href="cadastro-login.css">
 </head>
-<body>
-    <form class="formulario" action="cadastrar.php" method="POST">
+<body class="fundologin">
+    <form class="formulario" action="logar.php" method="POST">
 
         <div class="forms">
 
             <div class="buttonTransition">
                 <div class="btngroup">
                     
-                    <a class="login_button" href="cadastro.php">Login</a>
+                    <a class="login_button" href="cadastro.html">Login</a>
             
                 </div>
             </div>
@@ -32,8 +32,8 @@
                         <input type="password" name="senhal" id="isenhal" placeholder="Senha">
                         
                     </label>
-                    <img src="eye.svg" alt="" class="mostrarSenha msC">
-                    <button type="submit" class="btn_forms btn_cadastro" name="logar">
+                    <img src="eye.svg" alt="" class="mostrarSenha msL">
+                    <button class="btn_forms btn_cadastro" name="logar">
                         Logar
                     </button>
                 </div>
@@ -47,7 +47,28 @@
     </form>
 
 
+    <script>
+       var msL = document.querySelector('.msL')
+var senhaL = document.querySelector('#isenhal')
 
+
+
+
+
+
+
+msL.addEventListener('click',
+    ()=> {
+        if(msL.src.includes('eye.svg')) {
+            msL.src = 'eye-slash.svg';
+            senhaL.setAttribute('type','text')
+        } else if(msL.src.includes('eye-slash.svg')) {
+            msL.src = 'eye.svg';
+            senhaL.setAttribute('type','password')
+        }
+    }
+);
+    </script>
 
   
 </body>
